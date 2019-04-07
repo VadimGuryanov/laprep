@@ -1,4 +1,4 @@
-package com.example.forvova;
+package com.example.myappp;
 
 import org.junit.Test;
 

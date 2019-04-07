@@ -1,4 +1,4 @@
-package com.example.forvova;
+package com.example.myappp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.forvova", appContext.getPackageName());
+        assertEquals("com.example.myappp", appContext.getPackageName());
     }
 }
