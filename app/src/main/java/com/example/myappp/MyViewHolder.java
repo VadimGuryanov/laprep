@@ -9,10 +9,13 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
 
     private TextView text;
 
-
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
         text = itemView.findViewById(R.id.textView);
+    }
+
+    public TextView getText() {
+        return text;
     }
 
     public void bind(String name) {

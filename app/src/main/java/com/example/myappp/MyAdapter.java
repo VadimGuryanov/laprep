@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -29,7 +30,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
         myViewHolder.bind(list.get(i));
-        myViewHolder.itemView.setOnClickListener(view -> myCallBack.itemClick());
+        myViewHolder.itemView.setOnClickListener(view -> myCallBack.itemClick(list.get(i)));
     }
 
     @Override
@@ -38,8 +39,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     }
 
     interface MyCallBack {
-
-        void itemClick();
-
+        void itemClick(String s);
     }
 }
